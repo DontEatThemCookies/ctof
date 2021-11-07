@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: ctof
+Version: 0.1.1
+Summary: A simple library for temperature unit conversion
+Home-page: UNKNOWN
+Author: David Costell
+Author-email: davidcostell44@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# ctof
+### A simple library for temperature unit conversion
+
+***
+
+ctof is a library that converts Celsius values to Fahrenheit
+and vice versa. ctof works with ints and floats, as well as
+lists, tuples and sets, allowing for multiple values to be
+converted at once.
+
+***
+
+### Installation
+
+```
+pip install ctof
+```
+
+Make sure to import it as `from ctof import ctof`.
+
+### Functions
+
+There are only two functions in the ctof library:
+
+`cel(value)`
+Returns Fahrenheit value converted to Celsius.
+
+`fah(value)`
+Returns Celsius value converted to Fahrenheit.
+
+### Examples
+
+Convert an integer
+```py
+from ctof import ctof
+
+print(ctof.cel(32)) # Value is in Fahrenheit
+# Output: 0.0
+print(ctof.fah(0)) # Value is in Celsius
+# Output: 32
+```
+Convert a float
+```py
+print(ctof.cel(111.11))
+# Output: 43.95
+print(ctof.fah(38.6))
+# Output: 101.48
+```
+
+Convert from a variable
+```py
+var1 = 86
+var2 = 38
+
+print(ctof.cel(var1))
+# Output: 30.0
+print(ctof.fah(var2))
+# Output: 100.4
+```
+
+Convert from list, tuple and set
+```py
+mylist = [37, 38, 39]
+mytuple = (86, 87, 88)
+myset = {32, 64}
+
+print(ctof.cel(mytuple))
+# Output: (30.0, 30.555555555555557, 31.11111111111111)
+print(ctof.fah(mylist))
+# Output: [98.6, 100.4, 102.2]
+print(ctof.fah(myset))
+# Output: {89.6, 147.2}
+```
+

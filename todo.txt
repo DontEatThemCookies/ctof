@@ -1,0 +1,15 @@
+-Add CI/CD
+-Link PyPI page with the GitHub repo
+-Add Kelvin and Rankine support
+-Add dict support
+
+Unit Testing
+python -m unittest -v tests/unittest.py
+
+Publication
+pip install wheel
+pip install twine
+py -3.9 setup.py bdist_wheel # BUILD
+twine check dist/* # CHECK
+twine upload --repository-url https://test.pypi.org/legacy/ dist/* # testpypi
+twine upload dist/* # actual pypi
