@@ -17,7 +17,9 @@ converted at once.
 pip install ctof
 ```
 
-Make sure to import it as `from ctof import ctof`.
+The recommended import statement is `from ctof import ctof`.
+
+An alternative import statement: `import ctof.ctof`
 
 ### Functions
 
