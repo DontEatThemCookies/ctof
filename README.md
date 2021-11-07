@@ -74,3 +74,13 @@ print(ctof.fah(mylist))
 print(ctof.fah(myset))
 # Output: {89.6, 147.2}
 ```
+
+Formatted (rounded) output
+```py
+print(round(ctof.cel(86.9125), 3)) # Round method
+print("{:.3f}".format(ctof.cel(86.9125))) # Format method
+print(ctof.cel(86.9125)) # Raw output
+
+# Both methods return 30.507
+# (30.506944444444443 raw)
+```
