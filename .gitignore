@@ -199,3 +199,10 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,intellij+all,git,visualstudiocode
+
+# Other Files and Folders
+/todo.txt
+/dist
+/build
+/ctof.egg-info
+/venv
