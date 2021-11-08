@@ -17,19 +17,25 @@ converted at once.
 pip install ctof
 ```
 
-The recommended import statement is `from ctof import ctof`.
+The recommended import statement is: `from ctof import ctof`
 
-An alternative import statement: `import ctof.ctof`
+An alternative import statement: `import ctof.ctof as ctof`
 
 ### Functions
 
-There are only two functions in the ctof library:
+There are only three functions in the ctof library:
 
 `cel(value)`
 Returns Fahrenheit value converted to Celsius.
 
 `fah(value)`
 Returns Celsius value converted to Fahrenheit.
+
+**New:**
+
+`kel(value, temp)`
+Returns Celsius or Fahrenheit value converted to Kelvin
+
 
 ### Examples
 
@@ -82,5 +88,13 @@ print("{:.3f}".format(ctof.cel(86.9125))) # Format method
 print(ctof.cel(86.9125)) # Raw output
 
 # Both methods return 30.507
-# (30.506944444444443 raw)
+# (30.506944444444443 without formatting)
+```
+
+Convert to Kelvin from Celsius or Fahrenheit
+```py 
+print(ctof.kel(0, "C")) # Celsius
+# Output: 273.15
+print(ctof.kel(32, "F")) # Fahrenheit
+# Output: 273.15
 ```
