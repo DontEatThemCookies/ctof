@@ -1,6 +1,6 @@
 # ctof
 [![PyPi license](https://badgen.net/pypi/license/pip/)](https://pypi.com/project/ctof/)
-[![PyPI implementation](https://img.shields.io/pypi/implementation/ansicolortags.svg)](https://pypi.com/project/pip/)
+[![PyPI implementation](https://img.shields.io/pypi/implementation/ansicolortags.svg)](https://pypi.com/project/ctof/)
 
 ### A simple library for temperature unit conversion
 ### [PyPI Library](https://pypi.org/project/ctof/)
