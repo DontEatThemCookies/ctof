@@ -1,3 +1,11 @@
+### 0.1.5 - November 11, 2021
+* I forgot to change one more thing in 0.1.4
+    * It has been deleted, but I cannot reuse the name in PyPI anymore
+    * Therefore, 0.1.4 has been re-released as 0.1.5
+
+### 0.1.4 - November 11, 2021
+* Very minor patch - added project url
+
 ### 0.1.3 - November 11, 2021
 * Fixed a circular import error with the tests
     * Tests can now be run directly, instead of running from the command line.
