@@ -2,6 +2,12 @@
 ### A simple library for temperature unit conversion
 ### [PyPI Library](https://pypi.org/project/ctof/)
 
+![PkgVersion](https://img.shields.io/pypi/v/ctof)
+![PythonVersion](https://img.shields.io/pypi/pyversions/ctof)
+![PythonImplementation](https://img.shields.io/pypi/implementation/ctof)
+![License](https://img.shields.io/pypi/l/ctof)
+![Wheel](https://img.shields.io/pypi/wheel/ctof)
+
 ***
 
 ctof is a library that converts Celsius values to Fahrenheit
