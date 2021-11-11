@@ -1,3 +1,8 @@
+### 0.1.3 - November 11, 2021
+* Fixed a circular import error with the tests
+    * Tests can now be run directly, instead of running from the command line.
+    * The test filename has been changed: `python -m unittest -v tests/ctof-tests.py`
+
 ### 0.1.2 - November 8, 2021
 * NEW: Kelvin conversion
     * Syntax: ctof.kel(value, temptype)

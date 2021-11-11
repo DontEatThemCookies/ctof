@@ -1,7 +1,4 @@
 # ctof
-[![PyPi license](https://badgen.net/pypi/license/pip/)](https://pypi.com/project/ctof/)
-[![PyPI implementation](https://img.shields.io/pypi/implementation/ansicolortags.svg)](https://pypi.com/project/ctof/)
-
 ### A simple library for temperature unit conversion
 ### [PyPI Library](https://pypi.org/project/ctof/)
 
@@ -39,6 +36,11 @@ Returns Celsius value converted to Fahrenheit.
 `kel(value, temp)`
 Returns Celsius or Fahrenheit value converted to Kelvin
 
+### Tests
+
+```
+python -m unittest -v tests/ctof-tests.py
+```
 
 ### Examples
 
