@@ -23,9 +23,7 @@ converted at once.
 pip install ctof
 ```
 
-The recommended import statement is: `from ctof import ctof`
-
-An alternative import statement: `import ctof.ctof as ctof`
+Import with: `import ctof`
 
 ### Functions
 
@@ -52,7 +50,7 @@ python -m unittest -v tests/ctof-tests.py
 
 Convert an integer
 ```py
-from ctof import ctof
+import ctof
 
 print(ctof.cel(32)) # Value is in Fahrenheit
 # Output: 0.0

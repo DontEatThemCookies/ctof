@@ -1,5 +1,5 @@
 import unittest
-import ctof.ctof as ctof
+import ctof
 
 
 class CtofTestCase(unittest.TestCase):

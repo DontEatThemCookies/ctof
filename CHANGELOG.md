@@ -1,5 +1,10 @@
+### 0.1.6 - November 13, 2021
+* IMPORTANT PATCH: Moved the codebase to `__init__.py`
+    * ctof must now be imported as `import ctof`
+	* Change your code if it has been made pre-0.1.6
+
 ### 0.1.5 - November 11, 2021
-* I forgot to change one more thing in 0.1.4
+* I forgot to change a thing in 0.1.4
     * It has been deleted, but I cannot reuse the name in PyPI anymore
     * Therefore, 0.1.4 has been re-released as 0.1.5
 
