@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 setup (
     name='ctof',
     packages=find_packages(include=['ctof']),
-    version='0.1.6',
+    version='0.1.7',
     description='A simple library for temperature unit conversion',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
@@ -18,6 +18,7 @@ setup (
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
         "Operating System :: OS Independent"
     ],
     project_urls = {

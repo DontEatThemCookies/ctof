@@ -10,9 +10,9 @@
 
 ***
 
-ctof is a library that converts Celsius values to Fahrenheit
-and vice versa. ctof works with ints and floats, as well as
-lists, tuples and sets, allowing for multiple values to be
+ctof is a library for inter-conversion of Celsius, Fahrenheit
+and Kelvin values. ctof works with ints and floats, as well as lists,
+tuples and sets, allowing for multiple values to be
 converted at once.
 
 ***
@@ -29,13 +29,15 @@ Import with: `import ctof`
 
 There are only three functions in the ctof library:
 
-`cel(value)`
+`cel(value, [iskelvin])`
 Returns Fahrenheit value converted to Celsius.
 
-`fah(value)`
+`fah(value, [iskelvin])`
 Returns Celsius value converted to Fahrenheit.
 
-**New:**
+**New**: `[iskelvin]` is an optional argument.
+If this argument is passed, the function assumes the
+given value is in Kelvin instead of Celsius or Fahrenheit.
 
 `kel(value, temp)`
 Returns Celsius or Fahrenheit value converted to Kelvin
@@ -106,4 +108,17 @@ print(ctof.kel(0, "C")) # Celsius
 # Output: 273.15
 print(ctof.kel(32, "F")) # Fahrenheit
 # Output: 273.15
+```
+
+Convert to Celsius or Fahrenheit from Kelvin
+```py
+print(ctof.cel(0, "K")) # Kelvin to Celsius
+# Output: -273.15
+print(ctof.cel([0, 100], "K")) # List of K values
+# Output: [-273.15, -173.14999999999998]
+
+print(ctof.fah(32, "K")) # Kelvin to Fahrenheit
+# Output: -402.07
+print(ctof.fah([32, 212], "K")) # List of K values
+# Output: [-402.07, -78.06999999999996]
 ```
