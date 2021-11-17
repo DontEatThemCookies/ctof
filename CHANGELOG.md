@@ -1,6 +1,10 @@
 # changelog
 ***
 
+### 0.1.75 - November 17, 2021
+* FIXED CRITICAL ISSUE PRESENT IN 0.1.7
+    * USE 0.1.75 INSTEAD OF 0.1.7
+
 ### 0.1.7 - November 17, 2021
 * ctof now supports Kelvin to Celsius/Fahrenheit conversion
     * View the readme for more details

@@ -18,7 +18,7 @@ class CtofTestCase(unittest.TestCase):
         self.assertEqual(resultkelv, [-273.15, -173.14999999999998])
     def test_fahrenheit(self):
         result = ctof.fah(32)
-        resultkelv = ctof.fah(0, "K")
+        resultkelv = ctof.fah(32, "K")
         self.assertEqual(result, 89.6)
         self.assertEqual(resultkelv, -402.07)
     def test_fahrenheit_multi(self):
