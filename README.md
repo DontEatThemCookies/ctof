@@ -35,12 +35,15 @@ Returns Fahrenheit value converted to Celsius.
 `fah(value, [iskelvin])`
 Returns Celsius value converted to Fahrenheit.
 
-**New**: `[iskelvin]` is an optional argument.
+`[iskelvin]` is an optional argument.
 If this argument is passed, the function assumes the
 given value is in Kelvin instead of Celsius or Fahrenheit.
 
 `kel(value, temp)`
 Returns Celsius or Fahrenheit value converted to Kelvin
+
+#### New in 0.1.8:
+`version()` Prints the library version and its release date.
 
 ### Tests
 

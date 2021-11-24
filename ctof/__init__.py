@@ -1,3 +1,17 @@
+"""
+ctof 0.1.8 - 11/24/2021
+
+ctof is a simple library that performs temperature unit conversion.
+The common units Celsius, Fahrenheit and Kelvin are supported.
+Valid input values can be an int, a float, or a list/tuple/set of
+ints and/or floats.
+
+Python 3.6+ compatibility
+MIT License - David Costell
+
+Repository: https://github.com/DontEatThemCookies/ctof
+"""
+
 def cel(x, k=""):
     """
     This function converts the passed value to its Celsius equivalent.
@@ -116,7 +130,7 @@ def cel(x, k=""):
                 """
                 return x - 273.15
     except TypeError:
-        return "Invalid param type"
+        raise TypeError("Invalid parameter type (must be int, float or list/tuple/set)")
 
 def fah(x, k=""):
     """
@@ -238,7 +252,7 @@ def fah(x, k=""):
                 x = fah(x)
                 return x
     except TypeError:
-        return "Invalid param type"
+        raise TypeError("Invalid parameter type (must be int, float or list/tuple/set)")
 
 def kel(x, y):
     """
@@ -319,4 +333,7 @@ def kel(x, y):
             else:
                 raise ValueError("Invalid param y (must be C or F)")
     except TypeError:
-        return "Invalid param x type"
+        raise TypeError("Invalid parameter type (must be int, float or list/tuple/set)")
+
+def version():
+    print("ctof version 0.1.81 - 11/24/2021")

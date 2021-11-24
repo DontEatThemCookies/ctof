@@ -49,10 +49,10 @@ class CtofTestCase(unittest.TestCase):
         self.assertEqual(result5, (273.15, 373.15, 473.15))
         self.assertEqual(result6, {273.15, 373.15, 473.15})
     def test_invalidparams(self):
-        invalidresultc = ctof.cel("invalid")
-        invalidresultf = ctof.fah("invalid")
-        self.assertEqual(invalidresultc, "Invalid param type")
-        self.assertEqual(invalidresultf, "Invalid param type")
+        with self.assertRaises(TypeError):
+            ctof.cel("invalid")
+        with self.assertRaises(TypeError):
+            ctof.fah("invalid")
 
 if __name__ == '__main__':
     unittest.main()

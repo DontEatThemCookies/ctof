@@ -1,6 +1,24 @@
 # changelog
 ***
 
+### 0.1.81 - November 24, 2021
+* Fixed error in version() function
+* Otherwise, still identical to 0.1.8
+
+### 0.1.80 - November 24, 2021
+* PyPI has SOMEHOW messed up the release history
+    * 0.1.8 has been re-released as 0.1.80
+    * Re-released due to a PyPI bug
+
+
+### 0.1.8 - November 24, 2021
+* Parameters with invalid types are now handled by
+  raising a TypeError (e.g. calling the function with
+  a string parameter)
+* Added header documentation to show up as help.
+     * Input `help(ctof)`
+* New function `version()` - just prints the lib version
+
 ### 0.1.75 - November 17, 2021
 * FIXED CRITICAL ISSUE PRESENT IN 0.1.7
     * USE 0.1.75 INSTEAD OF 0.1.7
