@@ -1,6 +1,15 @@
 # changelog
 ***
 
+### 0.2.0 - January 21, 2022
+* Complete rewrite of the ctof library
+  * New usage and syntax detailed in updated README.md
+  * By default, all numbers returned are of type float
+  * ctof testing is now conducted on PyTest, superseding unittest
+  * All versions from 0.2.0 onwards are INCOMPATIBLE with previous ones!
+
+<details><summary>Old Versions</summary>
+
 ### 0.1.81 - November 24, 2021
 * Fixed error in version() function
 * Otherwise, still identical to 0.1.8
@@ -54,3 +63,4 @@
 ### 0.1.1 - November 7, 2021
 * Explicitly disallow non-operable data types to be passed as params (e.g. str)
 * Other miscellaneous changes
+</details>
