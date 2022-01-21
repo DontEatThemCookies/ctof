@@ -16,5 +16,5 @@ Author:     David Costell <davidcostell44@gmail.com>
 Repository: https://github.com/DontEatThemCookies/ctof
 """
 
-from convert import *
-from version import *
+from ctof.convert import *
+from ctof.version import *
