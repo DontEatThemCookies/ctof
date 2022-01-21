@@ -1,6 +1,11 @@
 # changelog
 ***
 
+### 0.2.1 - Skipped
+* This release is IDENTICAL to 0.2.0, with the exception that it fixes a major bug.
+  * For all intents and purposes, 0.2.1 is 0.2.0 and the next patch will be released
+    as 0.2.2.
+
 ### 0.2.0 - January 21, 2022
 * Complete rewrite of the ctof library
   * New usage and syntax detailed in updated README.md
