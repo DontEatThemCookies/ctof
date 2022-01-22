@@ -152,6 +152,7 @@ $RECYCLE.BIN/
 
 # Other Files and Folders
 */__pycache__
+/.other
 /todo
 /dist
 /build
