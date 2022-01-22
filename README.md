@@ -1,4 +1,4 @@
-# ctof
+# ctof 0.2.0
 ### A simple library for temperature unit conversion
 ### [PyPI Library](https://pypi.org/project/ctof/)
 
